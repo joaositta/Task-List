@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body{
+    background-image: url("./img/Fundo.png");
+    background-size: cover;
+}
+
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.input-task{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    
+}
+
+.button-add-task{
+    border: none;           /* Tira Borda */
+    border-radius: 5px;     /* Arredondar as Bordas */
+    height: 40px;           /* Altura */
+    background-color: #003329; /* cor de fundo */
+    color: #fff;      /* cor da fonte */
+    font-size: 17px;    /* tamanho da fonte */
+    padding: 0 15px;    /* margem em volta */
+    float: right;       /* Coloca o botão pro lado */
+    cursor: pointer;    /* Faz o mouse tranformar na mãozinha */
+    font-weight: 700;   /* Engrossa a Letra */
+}
+
+.button-add-task:hover{
+    opacity: 0.8;        /* Ajusta a opacidade do botão adicionar */
+}
+
+.button-add-task:active{
+    opacity: 0.5;        /* Ajusta a opacidade do botão adicionar */
+}
+
+.list-task{
+    width: 100%;       /* Ajusta comprimento da lista */
+    list-style: none; /* tira a bolinha da lista */
+    margin-top: 30px;
+
+}
+
+
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px gpx 10px rgba(0,0,0, 0.2);
+    height: 50px;
+    display: flex; /* Deixa todo mundo na mesma linha */
+    align-items: center; /* Deixa no centro entre, Superior e Inferiror*/
+    justify-content: space-between; /* Joga os itens completamente separados*/
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+ 
+/* Entre img e task o que está acontecendo?
+ Basicamente eu apago a imagem e crio o rask:hover img, no caso ele
+ faz com que quando passe o mouse em cima, apareca as imagens*/
+
+ img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* É a transição de entrada e saída das imagens*/
+}
+
+.task:hover img{
+    opacity: 1;
+    cursor: pointer; /* Aqui você coloca pro mouse virar a mãozinha */
+    
+}
+
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through; /* Serve para colcoar linha riscada*/
+}
+
